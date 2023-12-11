@@ -39,5 +39,16 @@ class DictionaryApp {
 document.addEventListener('DOMContentLoaded', () => {
     const dictionaryApp = new DictionaryApp();
     const searchButton = document.getElementById('searchButton');
-    searchButton.addEventListener('click', dictionaryApp.searchWord);
-});
+    const wordInput = document.getElementById('wordInput');
+
+    searchButton.addEventListener('click', () => {
+            dictionaryApp.searchWord();
+    });
+        // eventListener for ENTER KEY
+    wordInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent the form from submitting
+            dictionaryApp.searchWord();
+            }
+        });
+    });

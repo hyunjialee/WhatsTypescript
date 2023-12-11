@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary App</title>
-    <!-- Include Bootstrap CSS -->
+    <!--bootstrap css reference -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
+        body { <!-- dictionary app picture-->
             background-color: #e9ecef;
-            background-image: url('dictionary.png'); /* Replace with the path to your dictionary icon image */
-            background-size: 100px; /* Adjust the size of the icon */
-            background-position: 50% 25%; /* Adjust the position of the icon */
+            background-image: url('dictionary.png');
+            background-size: 100px;
+            background-position: 50% 15%;
             background-repeat: no-repeat;
         }
         h1 {
@@ -19,26 +19,22 @@
             font-family: 'Verdana', sans-serif;
             margin-bottom: 100px
         }
-
         #wordInput {
             border-color: #6c757d;
         }
-
         #searchButton {
             background-color: #6c757d;
             color: #fff;
         }
-
         #result {
             border: 1px solid #6c757d;
             padding: 10px;
             margin-top: 10px;
         }
-
         .container {
             background-color: #f8f9fa;
             border-radius: 10px;
-            padding: 20px;
+            padding: 30px;
         }
 
         body {
@@ -48,6 +44,8 @@
 </head>
 <body>
 <h1 style="text-align: center"> Dictionary App </h1>
+<p style="text-align: center"> Welcome to the simple dictionary.</p>
+<p style="text-align: center"> Enter a word to find the definition.</p>
 
 
 <div class="container mt-5">
@@ -59,18 +57,12 @@
                     <button class="btn btn-outline-primary" type="button" id="searchButton">Search</button>
                 </div>
             </div>
-            <div id="result" class="mt-3"></div>
+            <div id="result" class="mt-3">The definition will appear here</div>
         </div>
     </div>
 </div>
 
-
-<!-- Include Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<!-- Include TypeScript file -->
+<!-- javascript file-->
 <script src="index.js"></script>
 </body>
 </html>
